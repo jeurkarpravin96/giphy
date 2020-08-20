@@ -1,7 +1,7 @@
 let submit=()=>{
     let textinput=document.querySelector('#textinput').value;
 
-    let url="https://api.giphy.com/v1/gifs/search?api_key=VoCNEuX9m8lYf0FViUZLh8cNsCEBAal7&q="+textinput;
+    let url="https://api.giphy.com/v1/gifs/search?api_key=VoCNEuX9m8lYf0FViUZLh8cNsCEBAal7&q="+textinput ||   https://api.giphy.com/v1/gifs/search?api_key= VoCNEuX9m8lYf0FViUZLh8cNsCEBAal7&q=funny;
     document.querySelector('#textinput').value=' ';
     console.log(url)
     window.addEventListener('load',()=>{
