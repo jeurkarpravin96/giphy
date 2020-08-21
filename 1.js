@@ -5,8 +5,6 @@ let submit=()=>{
         document.querySelector('.error').innerHTML='Please enter GIFs or Stickers'
     }else{
         let url="https://api.giphy.com/v1/gifs/search?api_key=VoCNEuX9m8lYf0FViUZLh8cNsCEBAal7&q="+textinput ||  "https://api.giphy.com/v1/gifs/search?api_key=VoCNEuX9m8lYf0FViUZLh8cNsCEBAal7&q=funny"
-         document.querySelector('#textinput').value=' ';
-         console.log(url)
          document.querySelector('#name').style.visibility='visible';
          document.querySelector('#name').innerHTML=textinput.toUpperCase();
             let xhr= new XMLHttpRequest();
@@ -16,7 +14,8 @@ let submit=()=>{
             console.log(json);
             domoperation(json);
             }
-            xhr.send()
+            xhr.send();
+            document.querySelector('#textinput').value=' ';
     }
 }
  
