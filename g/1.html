@@ -60,13 +60,13 @@
                      <input type="text" class="form-control" placeholder="Search all the Gift and Stickers" id="textinput">
                  </div>
                  <div class="col-md-2 mt-1">
-                       <button class="btn btn-light btn-outline-success btn-block" >Search</i></button>
+                       <button class="btn btn-light btn-outline-success btn-block" onclick="submit()">Search</i></button>
                  </div>
                  <div class="error" style="margin-top: 2px; color: red;">
 
                  </div>
            </div>
-            <div class="row bg-dark text-white justify-content-center align-items-center mt-3">
+           <!-- <div class="row bg-dark text-white justify-content-center align-items-center mt-3">
                   <div class="col-md-1 ml-2 mr-2 mb-2 rounded-pill d-flex justify-content-center align-items-center bg-success " style="height: 30px; background:rgb(215, 166, 166);" >GIFs</div>
                   <div class="col-md-1 ml-2 mr-2 mb-2 rounded-pill d-flex justify-content-center align-items-center shadow" style="height: 30px; background:rgb(46, 5, 5);"onclick="sticker1('sticker')">Stickers</div>
                   <div class="col-md-1  ml-2 mr-2 mb-2 rounded-pill d-flex justify-content-center align-items-center d" style="height: 30px; background:rgb(46, 5, 5);font-family: cursive" onclick="sticker1('happ')">#happ</div>
@@ -86,12 +86,15 @@
                 <div class="col-md-1 ml-2 mr-2  mb-2   rounded-pill d-flex justify-content-center align-items-center d" style="height: 30px; background:rgb(46, 5, 5);font-family: cursive"onclick="sticker1('roleplay')">#role_play</div>
                 <div class="col-md-1 ml-2 mr-2  mb-2  rounded-pill d-flex justify-content-center align-items-center d" style="height: 30px; background:rgb(46, 5, 5);font-family: cursive"  onclick="sticker1('sadness')">#sadness</div> 
                 <div class="col-md-1  ml-2 mr-2  mb-2  rounded-pill d-flex justify-content-center align-items-center "id="hover" style="height: 30px; background:rgb(46, 5, 5); font-family:cursive" onclick="sticker1('forums')">#forums</div>
-            </div>
+                <div class="col-md-1 ml-2 mr-2  mb-2  rounded-pill d-flex justify-content-center align-items-center d" style="height: 30px; background:rgb(46, 5, 5);font-family: cursive"  onclick="sticker1('text')">#text</div> 
+                <div class="col-md-1  ml-2 mr-2  mb-2  rounded-pill d-flex justify-content-center align-items-center "id="hover" style="height: 30px; background:rgb(46, 5, 5); font-family:cursive" onclick="sticker1('emoji')">#emoji</div>
+
+            </div> -->
           <div class="row justify-content-center align-items-center mt-0 bg-dark text-black">
             <div class="col-md-6  ml-2 mr-2  mb-2 d-flex justify-content-center align-items-center " id="name" style="background:linear-gradient(white, yellow,black);width: 500px;visibility:hidden;width: 500px; height:50px;font-size:30px;font-weight: bold;font-family: cursive;">Name</div>
           </div>
           <div class="row justify-content-center align-items-center bg-dark mb-2 " id="p">
-               <div class="col-md-3  mt-1 mb-1 mr-1 d-flex justify-content-center align-items-center child " style="visibility: hidden;">
+               <div class="col-md-3  mt-1 mb-1 mr-1 child " style="visibility: hidden;">
                 <img src="https://media3.giphy.com/media/26tP3M3i03hoIYL6M/giphy.gif?cid=7281af05b5e0vss3jmedr8uja6frhrng7jv2qefj8ersm83q&rid=giphy.gif" alt="" id="myImg">
                </div>
           </div>
