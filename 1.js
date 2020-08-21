@@ -1,6 +1,7 @@
 
 let submit=()=>{
-    let textinput=document.querySelector('#textinput').value;
+    let input=document.querySelector('#textinput').value;
+    let textinput=input.toLowerCase();
     if(textinput===''){
         document.querySelector('.error').innerHTML='Please enter GIFs or Stickers'
     }else{
@@ -20,10 +21,10 @@ let submit=()=>{
 }
  
 
-let sticker1=(name)=>{
-    let textinput=name;
-if(name==='sticker' || name==='happ' || name==='behappy' || name=== 'happiness' || name==='joy' || name==='fun' || name==='wishes' || name==='birthdaywishes' || name==='smile' || name==='trending'
-   || name==='viral' || name==='news' || name ==='dailynews' || name==='roleplay' ||name==='forums' || name==='sadness'){
+let sticker1=(textinput)=>{
+    let name=textinput.toLowerCase();
+if(name==='sticker' ||  name==='trending' || name==='behappy' || name=== 'happiness' || name==='joy' || name==='fun' || name==='wishes' || name==='birthdaywishes' || name==='smile' ||name==='happ' 
+   || name==='viral' || name==='news' || name ==='dailynews' || name==='roleplay' ||name==='forums' || name==='sadness' || name==='emoji'||name==='text'){
     document.querySelector('#name').style.visibility='visible';
     document.querySelector('#name').innerHTML=name.toUpperCase();
     let url="https://api.giphy.com/v1/gifs/search?api_key=VoCNEuX9m8lYf0FViUZLh8cNsCEBAal7&q="+textinput;
